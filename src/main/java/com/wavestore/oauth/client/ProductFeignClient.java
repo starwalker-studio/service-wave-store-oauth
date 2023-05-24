@@ -39,6 +39,9 @@ public interface ProductFeignClient {
 	@RequestMapping(value = "/get-count/bass-amp-cabinet", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableBassAmpCabinetCount();
 	
+	@RequestMapping(value = "/bass-amp-cabinet/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassAmpCabinetBrandList();
+	
 	/* Bass Amp Head */
 	
 	@RequestMapping(value = "/bass-amp-head/catalog", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -56,7 +59,10 @@ public interface ProductFeignClient {
 	@RequestMapping(value = "/get-count/bass-amp-head", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableBassAmpHeadCount();
 	
-	/* Bass Amp Head */
+	@RequestMapping(value = "/bass-amp-head/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassAmpHeadBrandList();
+	
+	/* Bass Combo Amp */
 	
 	@RequestMapping(value = "/bass-combo-amp/catalog", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<BassComboAmp> getBassComboAmpList();
@@ -70,8 +76,11 @@ public interface ProductFeignClient {
 	@RequestMapping(value = "/search-by-id/bass-combo-amp", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public BassComboAmp getBassComboAmpById(@RequestParam("id") int id);
 	
-	@RequestMapping(value = "/get-count/bass-amp-head", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/get-count/bass-combo-amp", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableBassComboAmpCount();
+	
+	@RequestMapping(value = "/bass-combo-amp/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassComboAmpBrandList();
 	
 	/* Guitar Amp Cabinet */
 	
@@ -90,6 +99,9 @@ public interface ProductFeignClient {
 	@RequestMapping(value = "/get-count/guitar-amp-cabinet", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableGuitarAmpCabinetCount();
 	
+	@RequestMapping(value = "/guitar-amp-cabinet/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarAmpCabinetBrandList();
+	
 	/* Guitar Amp Head */
 	
 	@RequestMapping(value = "/guitar-amp-head/catalog", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -107,6 +119,9 @@ public interface ProductFeignClient {
 	@RequestMapping(value = "/get-count/guitar-amp-head", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableGuitarAmpHeadCount();
 	
+	@RequestMapping(value = "/guitar-amp-head/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarAmpHeadBrandList();
+	
 	/* Guitar Combo Amp */
 	
 	@RequestMapping(value = "/guitar-combo-amp/catalog", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -123,6 +138,9 @@ public interface ProductFeignClient {
 	
 	@RequestMapping(value = "/get-count/guitar-combo-amp", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableGuitarComboAmpCount();
+	
+	@RequestMapping(value = "/guitar-combo-amp/brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarComboAmpBrandList();
 	
 	/* Brands */
 	

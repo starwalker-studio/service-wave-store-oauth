@@ -52,6 +52,11 @@ public class ProductService implements IProductService {
 		return productFeignClient.getTableBassAmpCabinetCount();
 	}
 	
+	@Override
+	public List<Brand> getBassAmpCabinetBrandList() {
+		return productFeignClient.getBassAmpCabinetBrandList();
+	}
+	
 	/* Bass Amp Head */
 
 
@@ -80,7 +85,12 @@ public class ProductService implements IProductService {
 	@Override
 	public long getTableBassAmpHeadCount() {
 		return productFeignClient.getTableBassAmpHeadCount();
-	}	
+	}
+	
+	@Override
+	public List<Brand> getBassAmpHeadBrandList() {
+		return productFeignClient.getBassAmpHeadBrandList();
+	}
 
 	/* Bass Combo Amp */
 	
@@ -109,6 +119,11 @@ public class ProductService implements IProductService {
 	@Override
 	public long getTableBassComboAmpCount() {
 		return productFeignClient.getTableBassComboAmpCount();
+	}
+	
+	@Override
+	public List<Brand> getBassComboAmpBrandList() {
+		return productFeignClient.getBassComboAmpBrandList();
 	}
 	
 	/* Guitar Amp Cabinet */
@@ -140,6 +155,11 @@ public class ProductService implements IProductService {
 		return productFeignClient.getTableGuitarAmpCabinetCount();
 	}
 	
+	@Override
+	public List<Brand> getGuitarAmpCabinetBrandList() {
+		return productFeignClient.getGuitarAmpCabinetBrandList();
+	}
+	
 	/* Guitar Amp Head */
 
 	@Override
@@ -167,6 +187,11 @@ public class ProductService implements IProductService {
 	@Override
 	public long getTableGuitarAmpHeadCount() {
 		return productFeignClient.getTableGuitarAmpHeadCount();
+	}
+	
+	@Override
+	public List<Brand> getGuitarAmpHeadBrandList() {
+		return productFeignClient.getGuitarAmpHeadBrandList();
 	}
 	
 	/* Guitar Combo Amp */
@@ -198,11 +223,16 @@ public class ProductService implements IProductService {
 		return productFeignClient.getTableGuitarComboAmpCount();
 	}
 	
+	@Override
+	public List<Brand> getGuitarComboAmpBrandList() {
+		return productFeignClient.getGuitarComboAmpBrandList();
+	}
+	
 /* Brands */
 	
 	@Override
 	public List<Brand> getBrandByIds(Collection<Integer> ids) {
 		return productFeignClient.getBrandByIds(ids);
-	}
+	}	
 
 }

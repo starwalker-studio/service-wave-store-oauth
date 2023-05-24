@@ -28,6 +28,8 @@ public interface IProductService {
 	
 	public long getTableBassAmpCabinetCount();
 	
+	public List<Brand> getBassAmpCabinetBrandList();
+	
 	/* Bass Amp Head */
 	
 	public List<BassAmpHead> getBassAmpHeadList();
@@ -38,7 +40,9 @@ public interface IProductService {
 	
 	public BassAmpHead getBassAmpHeadById(int id);
 	
-	public long getTableBassAmpHeadCount();
+	public long getTableBassAmpHeadCount();	
+	
+	public List<Brand> getBassAmpHeadBrandList();
 	
 	/* Bass Combo Amp */
 	
@@ -52,6 +56,8 @@ public interface IProductService {
 	
 	public long getTableBassComboAmpCount();
 	
+	public List<Brand> getBassComboAmpBrandList();
+	
 	/* Guitar Amp Cabinet */
 	
 	public List<GuitarAmpCabinet> getGuitarAmpCabinetList();
@@ -63,6 +69,8 @@ public interface IProductService {
 	public GuitarAmpCabinet getGuitarAmpCabinetById(int id);
 	
 	public long getTableGuitarAmpCabinetCount();
+	
+	public List<Brand> getGuitarAmpCabinetBrandList();
 	
 	/* Guitar Amp Head */
 	
@@ -76,6 +84,8 @@ public interface IProductService {
 	
 	public long getTableGuitarAmpHeadCount();
 	
+	public List<Brand> getGuitarAmpHeadBrandList();
+	
 	/* Guitar Combo Amp */
 	
 	public List<GuitarComboAmp> getGuitarComboAmpList();
@@ -87,6 +97,8 @@ public interface IProductService {
 	public GuitarComboAmp getGuitarComboAmpById(int id);
 	
 	public long getTableGuitarComboAmpCount();
+	
+	public List<Brand> getGuitarComboAmpBrandList();
 	
 	/* Brands */
 	

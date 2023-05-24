@@ -65,6 +65,11 @@ public class AuthController {
 		return productService.getTableBassAmpCabinetCount();
 	}
 	
+	@RequestMapping(value = "/bass-amp-cabinet/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassAmpCabinetBrandList(){
+		return productService.getBassAmpCabinetBrandList();
+	}
+	
 	/* Bass Amp Head */
 	
 	@RequestMapping(value = "/bass-amp-head/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -94,6 +99,11 @@ public class AuthController {
 		return productService.getTableBassAmpHeadCount();
 	}
 	
+	@RequestMapping(value = "/bass-amp-head/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassAmpHeadBrandList(){
+		return productService.getBassAmpHeadBrandList();
+	}
+	
 	/* Bass Combo Amp */
 	
 	@RequestMapping(value = "/bass-combo-amp/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -121,6 +131,11 @@ public class AuthController {
 	@RequestMapping(value = "/bass-combo-amp/get-count", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableBassComboAmpCount() {
 		return productService.getTableBassComboAmpCount();
+	}
+	
+	@RequestMapping(value = "/bass-combo-amp/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getBassComboAmpBrandList(){
+		return productService.getBassComboAmpBrandList();
 	}
 		
 	/* Guitar Amp Cabinet */
@@ -152,6 +167,11 @@ public class AuthController {
 		return productService.getTableGuitarAmpCabinetCount();
 	}
 	
+	@RequestMapping(value = "/guitar-amp-cabinet/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarAmpCabinetBrandList(){
+		return productService.getGuitarAmpCabinetBrandList();
+	}
+	
 	/* Guitar Amp Head */
 	
 	@RequestMapping(value = "/guitar-amp-head/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -181,6 +201,11 @@ public class AuthController {
 		return productService.getTableGuitarAmpHeadCount();
 	}
 	
+	@RequestMapping(value = "/guitar-amp-head/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarAmpHeadBrandList(){
+		return productService.getGuitarAmpHeadBrandList();
+	}
+	
 	/* Guitar Combo Amp */
 	
 	@RequestMapping(value = "/guitar-combo-amp/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -208,6 +233,11 @@ public class AuthController {
 	@RequestMapping(value = "/guitar-combo-amp/get-count", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public long getTableGuitarComboAmpCount() {
 		return productService.getTableGuitarComboAmpCount();
+	}
+	
+	@RequestMapping(value = "/guitar-combo-amp/get-brand-list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Brand> getGuitarComboAmpBrandList(){
+		return productService.getGuitarComboAmpBrandList();
 	}
 	
 	/* Brands */
